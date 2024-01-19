@@ -28,95 +28,21 @@
         </div>
     </nav>
     <main>
-        <div class="cards-container container flex">
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/400x200" alt="">
-                </div>
-                <div class="card-content">
-                    <h3 id="news-title">this is the title</h3>
-                    <h6 class="news-source" id="news-source">End gedget 16/01/2024</h6>
-                    <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore blanditiis molestias dolor commodi ipsam eaque vel id culpa reiciendis pariatur ex voluptate numquam cum laborum soluta impedit nesciunt, fuga quaerat!</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/400x200" alt="">
-                </div>
-                <div class="card-content">
-                    <h3 id="news-title">this is the title</h3>
-                    <h6 class="news-source" id="news-source">End gedget 16/01/2024</h6>
-                    <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore blanditiis molestias dolor commodi ipsam eaque vel id culpa reiciendis pariatur ex voluptate numquam cum laborum soluta impedit nesciunt, fuga quaerat!</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/400x200" alt="">
-                </div>
-                <div class="card-content">
-                    <h3 id="news-title">this is the title</h3>
-                    <h6 class="news-source" id="news-source">End gedget 16/01/2024</h6>
-                    <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore blanditiis molestias dolor commodi ipsam eaque vel id culpa reiciendis pariatur ex voluptate numquam cum laborum soluta impedit nesciunt, fuga quaerat!</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/400x200" alt="">
-                </div>
-                <div class="card-content">
-                    <h3 id="news-title">this is the title</h3>
-                    <h6 class="news-source" id="news-source">End gedget 16/01/2024</h6>
-                    <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore blanditiis molestias dolor commodi ipsam eaque vel id culpa reiciendis pariatur ex voluptate numquam cum laborum soluta impedit nesciunt, fuga quaerat!</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/400x200" alt="">
-                </div>
-                <div class="card-content">
-                    <h3 id="news-title">this is the title</h3>
-                    <h6 class="news-source" id="news-source">End gedget 16/01/2024</h6>
-                    <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore blanditiis molestias dolor commodi ipsam eaque vel id culpa reiciendis pariatur ex voluptate numquam cum laborum soluta impedit nesciunt, fuga quaerat!</p>
-                </div>
-            </div><div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/400x200" alt="">
-                </div>
-                <div class="card-content">
-                    <h3 id="news-title">this is the title</h3>
-                    <h6 class="news-source" id="news-source">End gedget 16/01/2024</h6>
-                    <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore blanditiis molestias dolor commodi ipsam eaque vel id culpa reiciendis pariatur ex voluptate numquam cum laborum soluta impedit nesciunt, fuga quaerat!</p>
-                </div>
-            </div><div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/400x200" alt="">
-                </div>
-                <div class="card-content">
-                    <h3 id="news-title">this is the title</h3>
-                    <h6 class="news-source" id="news-source">End gedget 16/01/2024</h6>
-                    <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore blanditiis molestias dolor commodi ipsam eaque vel id culpa reiciendis pariatur ex voluptate numquam cum laborum soluta impedit nesciunt, fuga quaerat!</p>
-                </div>
-            </div><div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/400x200" alt="">
-                </div>
-                <div class="card-content">
-                    <h3 id="news-title">this is the title</h3>
-                    <h6 class="news-source" id="news-source">End gedget 16/01/2024</h6>
-                    <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore blanditiis molestias dolor commodi ipsam eaque vel id culpa reiciendis pariatur ex voluptate numquam cum laborum soluta impedit nesciunt, fuga quaerat!</p>
-                </div>
-            </div><div class="card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/400x200" alt="">
-                </div>
-                <div class="card-content">
-                    <h3 id="news-title">this is the title</h3>
-                    <h6 class="news-source" id="news-source">End gedget 16/01/2024</h6>
-                    <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore blanditiis molestias dolor commodi ipsam eaque vel id culpa reiciendis pariatur ex voluptate numquam cum laborum soluta impedit nesciunt, fuga quaerat!</p>
-                </div>
-            </div>
+        <div class="cards-container container flex" id="cards-container">
         </div>
     </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">this is the title</h3>
+                <h6 class="news-source" id="news-source">End gedget 16/01/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore blanditiis molestias dolor commodi ipsam eaque vel id culpa reiciendis pariatur ex voluptate numquam cum laborum soluta impedit nesciunt, fuga quaerat!</p>
+            </div>
+        </div>
+    </template>
     <script src="news.js"></script>
 </body>
 </html>
