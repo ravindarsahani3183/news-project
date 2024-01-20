@@ -9,21 +9,21 @@
 <body>
     <nav>
         <div class="main-nav container flex">
-            <a href="#" class="news-img">
+            <a href="#" onclick="reload()" class="news-img">
                 <img src="./img/news.jpg" alt="news logo">
             </a>
             <div class="nav-links">
                 <ul class="flex">
-                    <li class="hover-link nav-item">City</li>
-                    <li class="hover-link nav-item">Country</li>
-                    <li class="hover-link nav-item">Finance</li>
-                    <li class="hover-link nav-item">Politics</li>
-                    <li class="hover-link nav-item">Sports</li>
+                    <li class="hover-link nav-item" id="city" onclick="onNavItemClick('city')">City</li>
+                    <li class="hover-link nav-item" id="country" onclick="onNavItemClick('country')">Country</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
                 </ul>
             </div>
             <div class="search-bar flex">
-                <input type="text" class="news-input" placeholder="search">
-                <button class="search-button">search</button>
+                <input id="search-text" type="text" class="news-input" placeholder="search">
+                <button id="search-button" class="search-button">search</button>
             </div>
         </div>
     </nav>
